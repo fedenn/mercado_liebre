@@ -1,0 +1,278 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+}
+
+.main-header{
+    background-color:#EAC926; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -6%;
+    margin-bottom: 0%;
+    padding: 10% 2% 5% 5%;
+    width: 100%;
+}
+.logo{
+    width: 50%;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.barra{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 70px;
+}
+
+.lupa{
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
+
+
+.burger-menu{
+    margin: 20px auto;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 15%;
+    text-align: center;
+    padding: 7px;
+}
+
+.main-navbar{
+    display: none;
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li i{
+    color: #03264C;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #666;
+}
+.banner{
+  width: 100%;   
+}
+
+
+article{
+    margin-bottom: 10px;
+}
+.img{
+    width: 90%;
+    border-bottom: solid 1px#ebebeb ;
+}
+.titulares{
+    color: #666;
+    font-size: 25px;
+    font-weight:bold ;
+    margin: 20px;
+}
+.articulo{
+    background-color:white ;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.product-desc-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    width: 100%;
+  
+}
+.product-delivery-icon{
+    font-size: 16px;
+    background-color: white;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    padding: 5px;
+    position: relative;
+    left: 85%;
+    bottom: 80px;
+}
+.precios{
+    width: 30%;
+   font-size: 18px;
+}
+.descuentos, .descuentos1{
+    color:#39b54a;
+    bottom: 20px;
+    left: 70px;
+    font-size: 16px;
+    position:relative;
+}
+.descuentos1{
+    left: 80px;
+}
+footer{
+    background-color:white ;
+    padding: 7%;
+    width: 100%;
+    color: #666;
+    text-align: center;
+}
+
+
+@media (min-width:400px ){
+    .logo{
+        top: 40px;
+        width: 45%;
+    }
+
+    .barra{
+        position: absolute;
+        right: 45%;
+        top: 50px;
+        width: 150px;
+    }
+
+    .lupa{
+        position: absolute;
+        right: 43%;
+        top: 50px;
+    }
+
+    .copy-header{
+        width: 250px;
+        font-size: 12px;
+        text-align: right;
+        position: absolute;
+        right: 25px;
+        top: 50px;
+    }
+
+    .burger-menu{display: none;}
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex; 
+    }
+    .main-navbar li{
+        margin: 5px;
+    }
+    .product-desc-box{
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+        margin-left: -20px;
+    }
+
+    .articulo{ 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        width: 40%;
+        margin: 20px;
+    }
+
+    .product-delivery-icon1, .product-delivery-icon2, .product-delivery-icon3, .product-delivery-icon4{
+        position: relative;
+        left: 210px;
+    }
+    footer{
+        display: flex;
+    }
+
+    .foot-article, .foot-article2, .foot-article3{
+        width: 30%;
+    }
+}
+
+@media (min-width:768px ){
+    .logo{
+        margin-top: -25px;
+        margin-left: -20px;
+        width: 130%;
+    }
+
+    .copy-header{
+        position: absolute;
+        top: 70px;
+        left: 900px;
+    }
+    .barra{
+        position: absolute;
+        right: 570px;
+        top: 60px;
+        width: 300px;
+        height: 30px;
+    }
+
+    .lupa{
+        position: absolute;
+        right: 540px;
+        top: 60px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .copy-header{
+        width: 400px;
+        font-size: 20px;
+        text-align: right;
+        position: absolute;
+        right: 25px;
+    }
+
+    .burger-menu{display: none;}
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 1250px;
+        position: absolute;
+        top: 150px;
+        font-size: 22px;
+    }
+    .main-navbar ul{
+        display: flex; 
+    }
+    .main-navbar li{
+        margin: 5px;
+    }
+    .product-desc-box{
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+        margin-left: -20px;
+    }
+
+    .articulo{ 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        width: 20%;
+        margin: 20px;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    .foot-article, .foot-article2, .foot-article3{
+        width: 30%;
+    }
+}
